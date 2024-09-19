@@ -1,0 +1,11 @@
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\bin\Debug\net8.0\DoNetMinIO.Domains.deps.json
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\bin\Debug\net8.0\DoNetMinIO.Domains.dll
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\bin\Debug\net8.0\DoNetMinIO.Domains.pdb
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\DoNetMinIO.Domains.GeneratedMSBuildEditorConfig.editorconfig
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\DoNetMinIO.Domains.AssemblyInfoInputs.cache
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\DoNetMinIO.Domains.AssemblyInfo.cs
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\DoNetMinIO.Domains.csproj.CoreCompileInputs.cache
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\DoNetMinIO.Domains.dll
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\refint\DoNetMinIO.Domains.dll
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\DoNetMinIO.Domains.pdb
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\ref\DoNetMinIO.Domains.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "h6FFPWOv1ygePCU45GGtsoDWpvyr/n87s5rYhj6zZWw=",
+  "Source": "DoNetMinIO.Api",
+  "BasePath": "_content/DoNetMinIO.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

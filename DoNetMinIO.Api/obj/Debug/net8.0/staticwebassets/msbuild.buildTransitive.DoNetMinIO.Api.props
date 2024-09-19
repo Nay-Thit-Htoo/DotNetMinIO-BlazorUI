@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\DoNetMinIO.Api.props" />
+</Project>

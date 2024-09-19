@@ -1,0 +1,46 @@
+﻿@page "/"
+@using MudBlazor
+@rendermode InteractiveServer
+
+
+<PageTitle>DotNetMinIO</PageTitle>
+
+<h1>Bucket</h1>
+<MudStack Row="true" AlignItems="AlignItems.Center">
+    <MudTextField T="string" Label="Bucket Name" @bind-Value="txtBucketName" Variant="Variant.Outlined" @ref="txtFieldBucketName"></MudTextField>
+    <MudButton Variant="Variant.Filled" Size="Size.Small" Style="width: 200px; height: 50px;" Color="Color.Primary" OnClick="@CreateBtnClick">Create</MudButton>
+</MudStack>
+
+<MudCard Class="mt-3 p-3">
+    <MudStack>
+        <MudStack Row="true" StretchItems="StretchItems.Start">
+            <h4>Bucket List</h4>
+           <MudItem>
+                <MudFab Color="Color.Dark" StartIcon="@Icons.Material.Filled.Refresh" Size="Size.Small" OnClick="@GetBucketList" />
+           </MudItem>
+        </MudStack>     
+        @if(buckets is not null && buckets.Any())
+        {
+            <MudDataGrid Items="@buckets" Filterable="false" SortMode="@SortMode.None" Groupable="false">
+                <Columns>
+                    <PropertyColumn Property="x => x.Name" />
+                    <PropertyColumn Property="x => x.CreatedDate" />
+                    <TemplateColumn CellClass="d-flex justify-end" Title="Action" Style="width:50">
+                        <CellTemplate>
+                            <MudButton Size="@Size.Small" Variant="@Variant.Filled" Color="@Color.Error">Delete</MudButton>
+                        </CellTemplate>
+                    </TemplateColumn>
+                </Columns>
+            </MudDataGrid>
+        }
+        else
+        {
+            <MudStack Row="true" Justify="Justify.Center">
+                <MudProgressCircular Color="Color.Primary" Size="Size.Medium" Indeterminate="true" />
+            </MudStack>
+        }
+
+    </MudStack>
+</MudCard>
+
+

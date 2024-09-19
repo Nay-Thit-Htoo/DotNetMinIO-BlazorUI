@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DoNetMinIO.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DoNetMinIO.UI.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DoNetMinIO.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DoNetMinIO.UI.props",
+      "PackagePath": "build\\DoNetMinIO.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DoNetMinIO.UI.props",
+      "PackagePath": "buildMultiTargeting\\DoNetMinIO.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DoNetMinIO.UI.props",
+      "PackagePath": "buildTransitive\\DoNetMinIO.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
