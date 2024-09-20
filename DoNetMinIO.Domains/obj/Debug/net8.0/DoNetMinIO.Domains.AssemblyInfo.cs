@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoNetMinIO.Domains")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79cfd872c6cb9a6d42ce4c3cb20c334b1bc9f8cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f4c404be1d2f5381a28261afcc4c0f6806deaca")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoNetMinIO.Domains")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoNetMinIO.Domains")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

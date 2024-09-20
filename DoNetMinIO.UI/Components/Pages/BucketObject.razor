@@ -1,4 +1,5 @@
 ﻿@page "/bucketobject"
+@using MudBlazor
 @using DoNetMinIO.Domain.Model.Response
 @rendermode InteractiveServer
 
@@ -16,12 +17,12 @@
                 }
             }
         </MudSelect>
-        <MudTextField T="string" Label="Custom Folder Path" HelperText="format : bucektname/folderpath/folderpath/" Variant="Variant.Filled"></MudTextField>
+        <MudTextField T="string" Label="Custom Folder Path" @bind-Value="txtObjectNewFilePath" HelperText="format : bucektname/folderpath/folderpath/" Variant="Variant.Filled"></MudTextField>
     </MudStack>
     <MudFileUpload T="IReadOnlyList<IBrowserFile>"
                    @ref="@_fileUpload"
                    OnFilesChanged="OnInputFileChanged"
-                   AppendMultipleFiles
+                   AppendMultipleFiles="false"
                    Hidden="@false"
                    InputClass="absolute mud-width-full mud-height-full overflow-hidden z-10"
                    InputStyle="opacity:0"
@@ -29,57 +30,69 @@
                    @ondrop="@ClearDragClass"
                    @ondragenter="@SetDragClass"
                    @ondragleave="@ClearDragClass"
-                   @ondragend="@ClearDragClass">
+                   @ondragend="@ClearDragClass"
+                   MaximumFileCount="1"
+                   >
         <ActivatorContent>
-            <MudPaper Height="300px"
+            <MudPaper Height="100px"
                       Outlined="true"
                       Class="@_dragClass">
                 <MudText Typo="Typo.h6">
                     Drag and drop files here or click
                 </MudText>
-                @foreach (var file in _fileNames)
+                @if (!string.IsNullOrEmpty(uploadedFileName))
                 {
                     <MudChip T="string"
                              Color="Color.Dark"
-                             Text="@file"
+                             Text="@uploadedFileName"
                              tabindex="-1" />
                 }
             </MudPaper>
         </ActivatorContent>
     </MudFileUpload>
     <MudToolBar Gutters="@false"
-                Class="relative d-flex justify-end gap-4">
+                Class="relative d-flex justify-end gap-4">        
         <MudButton Color="Color.Primary"
-                   OnClick="@OpenFilePickerAsync"
-                   Variant="Variant.Filled">
-            Open file picker
-        </MudButton>
-        <MudButton Color="Color.Primary"
-                   Disabled="@(!_fileNames.Any())"
-                   OnClick="@Upload"
+                   Disabled="@(string.IsNullOrEmpty(uploadedFileName))"
+                   OnClick="@UploadBtn_Click"
                    Variant="Variant.Filled">
             Upload
         </MudButton>
         <MudButton Color="Color.Error"
-                   Disabled="@(!_fileNames.Any())"
+                   Disabled="@(string.IsNullOrEmpty(uploadedFileName))"
                    OnClick="@ClearAsync"
                    Variant="Variant.Filled">
             Clear
         </MudButton>
-    </MudToolBar>
-
-    <MudDivider DividerType="DividerType.Inset" />
+    </MudToolBar>  
     <MudCard Class="mt-3 p-3">
         <MudStack>
-            <MudStack Row="true" StretchItems="StretchItems.Start">
-                <h4>Bucket's Object List</h4>
-                <MudItem>
-                    <MudFab Color="Color.Dark" StartIcon="@Icons.Material.Filled.Refresh" Size="Size.Small" />
-                </MudItem>
-            </MudStack>            
-            <MudStack Row="true" Justify="Justify.Center">
-                <MudProgressCircular Color="Color.Primary" Size="Size.Medium" Indeterminate="true" />
-            </MudStack>
+            <h4>Bucket's Object List</h4>
+            @if (bucketObjects is not null && bucketObjects.Any())
+            {
+                <MudDataGrid Items="@bucketObjects" Filterable="false" SortMode="@SortMode.None" Groupable="false">
+                    <Columns>
+                        <PropertyColumn Property="x => x.BucketName" Title="Bucket Name" />
+                        <PropertyColumn Property="x => x.ObjectFileName" Title="Object File Name" />
+                        <PropertyColumn Property="x => x.FileSize" Title="Size" />
+                        <PropertyColumn Property="x => x.ModifiedDate" Title="Last Modified Date" />
+                        <TemplateColumn CellClass="d-flex justify-end" Title="Action" Style="width:50">
+                            <CellTemplate>
+                                <MudStack Row="true">
+                                    <MudButton Size="@Size.Small" Variant="@Variant.Filled" Color="@Color.Success">Download</MudButton>
+                                    <MudButton Size="@Size.Small" Variant="@Variant.Filled" Color="@Color.Error">Delete</MudButton>
+                                </MudStack>
+                            </CellTemplate>
+                        </TemplateColumn>
+                    </Columns>
+                </MudDataGrid>
+            }
+            else
+            {
+                <MudStack Row="true" Justify="Justify.Center">
+                   <p>There is no records...</p>
+                </MudStack>
+            }
         </MudStack>
     </MudCard>
 </MudStack>

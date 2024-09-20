@@ -3,6 +3,7 @@ using DoNetMinIO.Api.Model;
 using DoNetMinIO.Api.Model.Request;
 using DoNetMinIO.Api.Model.Response;
 using DoNetMinIO.Domain.Model.Response;
+using DoNetMinIO.Domains.Model.Response;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Minio;
 using Minio.ApiEndpoints;
@@ -11,6 +12,7 @@ using Minio.DataModel.Args;
 using Minio.DataModel.Result;
 using Minio.Exceptions;
 using System;
+using System.Collections.Generic;
 using System.Security.AccessControl;
 
 namespace DoNetMinIO.Api.Service
@@ -177,15 +179,15 @@ namespace DoNetMinIO.Api.Service
              return result;
         }
 
-        public Task<ResultDto<IAsyncEnumerable<Item>>> GetBucketObjectList(CommonRequestDto requestDto)
+        public async Task<ResultDto<IEnumerable<BucketObjectResponseDto>>>GetBucketObjectList(CommonRequestDto requestDto)
         {
             if (string.IsNullOrEmpty(requestDto.BucketName))
                 throw new ArgumentNullException(nameof(requestDto.BucketName));            
 
-            ResultDto<IAsyncEnumerable<Item>> resultDto = new ResultDto<IAsyncEnumerable<Item>>();
+            ResultDto<IEnumerable<BucketObjectResponseDto>> resultDto = new ResultDto<IEnumerable<BucketObjectResponseDto>>();
             try
             {
-                var listArgs = (String.IsNullOrEmpty(requestDto.ObjectPrefixName)) ? 
+                var listArgs = (String.IsNullOrEmpty(requestDto.ObjectPrefixName)) ?
                     new ListObjectsArgs()
                 .WithBucket(requestDto.BucketName)
                 .WithRecursive(true) :
@@ -194,14 +196,28 @@ namespace DoNetMinIO.Api.Service
                 .WithPrefix(requestDto.ObjectPrefixName)
                 .WithRecursive(true);
 
-                var bucketObjectList=_minioClient.ListObjectsEnumAsync(listArgs);
+                var bucketObjectList = _minioClient.ListObjectsEnumAsync(listArgs);
                 if (bucketObjectList is null)
                 {
                     resultDto.MessageCode = nameof(Utilities.MessageStatus.NotFound);
                     resultDto.Message = $"There is no any objects for {requestDto.BucketName}!";
                 }
                 else
-                    resultDto.Result = bucketObjectList;
+                {
+                    List<BucketObjectResponseDto> objectLst =new List<BucketObjectResponseDto>();
+                     await foreach (Item item in bucketObjectList)
+                    {
+                        objectLst.Add(new BucketObjectResponseDto()
+                        {
+                            BucketName = requestDto.BucketName,
+                            ObjectFileName=item.Key,
+                            ContentType = item.ContentType,
+                            FileSize =(long)item.Size,
+                            ModifiedDate = item.LastModifiedDateTime.ToString()!
+                        });
+                    }
+                     resultDto.Result = objectLst;
+                }            
                 goto Result;
             }
             catch (Exception e)
@@ -212,7 +228,7 @@ namespace DoNetMinIO.Api.Service
             }
 
         Result:
-            return Task.FromResult(resultDto);
+            return resultDto;
         }
 
         public async Task<ResultDto<string>> CheckBucketStatus(CommonRequestDto requestDto)
