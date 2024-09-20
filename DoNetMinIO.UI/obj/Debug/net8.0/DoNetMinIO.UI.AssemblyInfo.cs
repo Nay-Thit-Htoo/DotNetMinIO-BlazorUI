@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoNetMinIO.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79cfd872c6cb9a6d42ce4c3cb20c334b1bc9f8cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoNetMinIO.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoNetMinIO.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

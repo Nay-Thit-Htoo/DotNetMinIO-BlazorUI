@@ -9,3 +9,4 @@ D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\DoNetMinIO.Domain
 D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\refint\DoNetMinIO.Domains.dll
 D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\DoNetMinIO.Domains.pdb
 D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\ref\DoNetMinIO.Domains.dll
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Domains\obj\Debug\net8.0\DoNetMinIO.Domains.sourcelink.json

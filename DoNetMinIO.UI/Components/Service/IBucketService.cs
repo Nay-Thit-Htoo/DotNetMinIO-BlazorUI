@@ -9,5 +9,6 @@ namespace DoNetMinIO.UI.Components.Service
     {
         Task<ResultDto<String>> CreateBuckets(string bucketName);
         Task<ResultDto<IEnumerable<BucketResponseDto>>> GetBuckets();
+        Task<ResultDto<string>> DeleteBuckets(string bucketName);
     }
 }

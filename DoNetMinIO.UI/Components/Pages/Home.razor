@@ -27,7 +27,7 @@
                     <PropertyColumn Property="x => x.CreatedDate" />
                     <TemplateColumn CellClass="d-flex justify-end" Title="Action" Style="width:50">
                         <CellTemplate>
-                            <MudButton Size="@Size.Small" Variant="@Variant.Filled" Color="@Color.Error">Delete</MudButton>
+                            <MudButton Size="@Size.Small" Variant="@Variant.Filled" Color="@Color.Error" OnClick="@(()=>DeleteBucketBtnClick(context.Item.Name))">Delete</MudButton>
                         </CellTemplate>
                     </TemplateColumn>
                 </Columns>

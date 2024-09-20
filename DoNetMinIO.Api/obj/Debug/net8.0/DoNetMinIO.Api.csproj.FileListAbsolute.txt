@@ -37,3 +37,4 @@ D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Api\obj\Debug\net8.0\refint\DoNetMinIO.Api
 D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Api\obj\Debug\net8.0\DoNetMinIO.Api.pdb
 D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Api\obj\Debug\net8.0\DoNetMinIO.Api.genruntimeconfig.cache
 D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Api\obj\Debug\net8.0\ref\DoNetMinIO.Api.dll
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.Api\obj\Debug\net8.0\DoNetMinIO.Api.sourcelink.json

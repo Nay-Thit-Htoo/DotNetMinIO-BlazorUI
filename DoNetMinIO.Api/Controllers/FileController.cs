@@ -16,7 +16,7 @@ namespace DoNetMinIO.Api.Controllers
         }
 
         [HttpPost("upload")]
-        public async Task<IActionResult> UploadFile(string bucketName,IFormFile file)
+        public async Task<IActionResult> UploadFile(string bucketName,string? objectFilePath,IFormFile file)
         {
             if (file == null || file.Length == 0)
                 return BadRequest("File is missing");
@@ -26,7 +26,7 @@ namespace DoNetMinIO.Api.Controllers
             {
                 await file.CopyToAsync(stream);
             }
-            var request = new CommonRequestDto() {BucketName=bucketName, ObjectName=file.Name,FilePath=filePath };
+            var request = new CommonRequestDto() {BucketName=bucketName, ObjectFilePath=objectFilePath,ObjectName=file.FileName,FilePath=filePath };
             await _minIoService.UploadFileAsync(request);
 
             return Ok("File uploaded successfully.");

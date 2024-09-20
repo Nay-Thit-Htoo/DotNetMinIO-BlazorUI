@@ -30,9 +30,9 @@ namespace DoNetMinIO.Api.Controllers
         }
 
         [HttpPost("GetObjectListByBucketName")]
-        public async Task<IActionResult> GetObjectListByBucketName(string bucketName,string prefixName)
+        public async Task<IActionResult> GetObjectListByBucketName(string bucketName,string? filePrefixName)
         {
-            var request = new CommonRequestDto() { BucketName = bucketName,ObjectPrefixName= prefixName };
+            var request = new CommonRequestDto() { BucketName = bucketName,ObjectPrefixName= filePrefixName };
             return Ok(await _minIoService.GetBucketObjectList(request));
         }
 

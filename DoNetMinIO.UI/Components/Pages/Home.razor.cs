@@ -47,6 +47,7 @@ namespace DoNetMinIO.UI.Components.Pages
             }
         }
 
+        #region Button Click
         private async void CreateBtnClick()
         {
            if(String.IsNullOrEmpty(txtBucketName))
@@ -67,5 +68,25 @@ namespace DoNetMinIO.UI.Components.Pages
                 Snackbar.Add(result.Message, Severity.Error);
             }
         }
+
+        private async void DeleteBucketBtnClick(string bucketName)
+        {
+            if (String.IsNullOrEmpty(bucketName))
+            {
+                throw new ArgumentNullException(nameof(bucketName));              
+            }
+            var result = await bucketService.DeleteBuckets(bucketName);
+            if (result.MessageCode == nameof(Utilities.MessageStatus.Success))
+            {
+                Snackbar.Add(result.Message, Severity.Success);               
+                GetBucketList();
+            }
+            else
+            {
+                Snackbar.Add(result.Message, Severity.Error);
+            }
+
+        }
+        #endregion
     }
 }
