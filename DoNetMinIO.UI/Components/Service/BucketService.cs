@@ -26,6 +26,16 @@ namespace DoNetMinIO.UI.Components.Service
             return result!;
                      
         }
-        
+
+        public async Task<ResultDto<string>> DeleteBuckets(string bucketName)
+        {
+            using HttpResponseMessage response = await httpClient.PostAsJsonAsync("api/Bucket/RemoveBucket?bucketName=" + bucketName, bucketName);
+            response.EnsureSuccessStatusCode();
+            var responseContent = await response.Content.ReadAsStringAsync();
+            var result = JsonConvert.DeserializeObject<ResultDto<string>>(responseContent);
+            return result!;
+
+        }
+
     }
 }

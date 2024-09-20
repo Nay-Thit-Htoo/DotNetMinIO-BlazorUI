@@ -1,0 +1,85 @@
+﻿@page "/bucketobject"
+@using DoNetMinIO.Domain.Model.Response
+@rendermode InteractiveServer
+
+<PageTitle>Bucket Objects</PageTitle>
+
+<h1>Bucket Objects</h1>
+<MudStack Style="width: 100%">
+    <MudStack Row="true" StretchItems="StretchItems.All">
+        <MudSelect T="BucketResponseDto" Label="Buckets" Variant="Variant.Filled" ValueChanged="@BucketDropDown_Change">
+            @if(buckets is not null)
+            {
+                @foreach (var objBucket in buckets)
+                {
+                    <MudSelectItem Value="objBucket">@objBucket.Name</MudSelectItem>
+                }
+            }
+        </MudSelect>
+        <MudTextField T="string" Label="Custom Folder Path" HelperText="format : bucektname/folderpath/folderpath/" Variant="Variant.Filled"></MudTextField>
+    </MudStack>
+    <MudFileUpload T="IReadOnlyList<IBrowserFile>"
+                   @ref="@_fileUpload"
+                   OnFilesChanged="OnInputFileChanged"
+                   AppendMultipleFiles
+                   Hidden="@false"
+                   InputClass="absolute mud-width-full mud-height-full overflow-hidden z-10"
+                   InputStyle="opacity:0"
+                   tabindex="-1"
+                   @ondrop="@ClearDragClass"
+                   @ondragenter="@SetDragClass"
+                   @ondragleave="@ClearDragClass"
+                   @ondragend="@ClearDragClass">
+        <ActivatorContent>
+            <MudPaper Height="300px"
+                      Outlined="true"
+                      Class="@_dragClass">
+                <MudText Typo="Typo.h6">
+                    Drag and drop files here or click
+                </MudText>
+                @foreach (var file in _fileNames)
+                {
+                    <MudChip T="string"
+                             Color="Color.Dark"
+                             Text="@file"
+                             tabindex="-1" />
+                }
+            </MudPaper>
+        </ActivatorContent>
+    </MudFileUpload>
+    <MudToolBar Gutters="@false"
+                Class="relative d-flex justify-end gap-4">
+        <MudButton Color="Color.Primary"
+                   OnClick="@OpenFilePickerAsync"
+                   Variant="Variant.Filled">
+            Open file picker
+        </MudButton>
+        <MudButton Color="Color.Primary"
+                   Disabled="@(!_fileNames.Any())"
+                   OnClick="@Upload"
+                   Variant="Variant.Filled">
+            Upload
+        </MudButton>
+        <MudButton Color="Color.Error"
+                   Disabled="@(!_fileNames.Any())"
+                   OnClick="@ClearAsync"
+                   Variant="Variant.Filled">
+            Clear
+        </MudButton>
+    </MudToolBar>
+
+    <MudDivider DividerType="DividerType.Inset" />
+    <MudCard Class="mt-3 p-3">
+        <MudStack>
+            <MudStack Row="true" StretchItems="StretchItems.Start">
+                <h4>Bucket's Object List</h4>
+                <MudItem>
+                    <MudFab Color="Color.Dark" StartIcon="@Icons.Material.Filled.Refresh" Size="Size.Small" />
+                </MudItem>
+            </MudStack>            
+            <MudStack Row="true" Justify="Justify.Center">
+                <MudProgressCircular Color="Color.Primary" Size="Size.Medium" Indeterminate="true" />
+            </MudStack>
+        </MudStack>
+    </MudCard>
+</MudStack>

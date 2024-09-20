@@ -156,11 +156,16 @@ namespace DoNetMinIO.Api.Service
                     await _minioClient.MakeBucketAsync(new MakeBucketArgs().WithBucket(requestDto.BucketName));
                 }
 
-                await _minioClient.PutObjectAsync(new PutObjectArgs()
+                if (String.IsNullOrEmpty(requestDto.ObjectFilePath))
+                    await _minioClient.PutObjectAsync(new PutObjectArgs()
                     .WithBucket(requestDto.BucketName)
                     .WithObject(requestDto.ObjectName)
                     .WithFileName(requestDto.FilePath));
-
+                else
+                    await _minioClient.PutObjectAsync(new PutObjectArgs()
+                    .WithBucket(requestDto.BucketName)
+                    .WithObject($"{requestDto.ObjectFilePath}/{requestDto.ObjectName}")
+                    .WithFileName(requestDto.FilePath));
             }
             catch (MinioException e)
             {
@@ -175,16 +180,16 @@ namespace DoNetMinIO.Api.Service
         public Task<ResultDto<IAsyncEnumerable<Item>>> GetBucketObjectList(CommonRequestDto requestDto)
         {
             if (string.IsNullOrEmpty(requestDto.BucketName))
-                throw new ArgumentNullException(nameof(requestDto.BucketName));
-
-            if (string.IsNullOrEmpty(requestDto.ObjectPrefixName))
-                throw new ArgumentNullException(nameof(requestDto.ObjectPrefixName));
+                throw new ArgumentNullException(nameof(requestDto.BucketName));            
 
             ResultDto<IAsyncEnumerable<Item>> resultDto = new ResultDto<IAsyncEnumerable<Item>>();
             try
             {
-                var listArgs = 
+                var listArgs = (String.IsNullOrEmpty(requestDto.ObjectPrefixName)) ? 
                     new ListObjectsArgs()
+                .WithBucket(requestDto.BucketName)
+                .WithRecursive(true) :
+                 new ListObjectsArgs()
                 .WithBucket(requestDto.BucketName)
                 .WithPrefix(requestDto.ObjectPrefixName)
                 .WithRecursive(true);

@@ -17,7 +17,7 @@ namespace DoNetMinIO.Api.Service
         Task<ResultDto<string>> RemoveBucket(CommonRequestDto requestDto);
         Task<ResultDto<string>> UploadFileAsync(CommonRequestDto requestDto);
         Task DownloadFileAsync(CommonRequestDto requestDto);
-        Task<ResultDto<IAsyncEnumerable<Item>>> GetBucketObjectList(CommonRequestDto requestDto);
+        Task<ResultDto<IAsyncEnumerable<Item>>> GetBucketObjectList(CommonRequestDto requestDto);     
         Task<ResultDto<string>> RemoveBucketObject(CommonRequestDto requestDto);
     }
 }

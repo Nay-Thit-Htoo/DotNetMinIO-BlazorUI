@@ -4,8 +4,11 @@
     {
         public string BucketName { get; set; }
         public string ObjectName { get; set; }
+        
+        public string? ObjectFilePath { get; set; }
+
         public string FilePath { get; set; }   
-        public string ObjectPrefixName { get; set; }    
+        public string? ObjectPrefixName { get; set; }    
 
     }
 }

@@ -44,3 +44,4 @@ D:\NTH-Projects\DoNetMinIO\DoNetMinIO.UI\obj\Debug\net8.0\DoNetMinIO.UI.pdb
 D:\NTH-Projects\DoNetMinIO\DoNetMinIO.UI\obj\Debug\net8.0\DoNetMinIO.UI.genruntimeconfig.cache
 D:\NTH-Projects\DoNetMinIO\DoNetMinIO.UI\obj\Debug\net8.0\ref\DoNetMinIO.UI.dll
 D:\NTH-Projects\DoNetMinIO\DoNetMinIO.UI\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\NTH-Projects\DoNetMinIO\DoNetMinIO.UI\obj\Debug\net8.0\DoNetMinIO.UI.sourcelink.json

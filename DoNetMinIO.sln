@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoNetMinIO.Api", "DoNetMinI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoNetMinIO.UI", "DoNetMinIO.UI\DoNetMinIO.UI.csproj", "{E293CA98-A8E8-4C15-A053-BCF253148B32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoNetMinIO.Domains", "DoNetMinIO.Domains\DoNetMinIO.Domains.csproj", "{51ACB295-D0AE-4885-8BD6-11F6F1C0ECCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoNetMinIO.Domains", "DoNetMinIO.Domains\DoNetMinIO.Domains.csproj", "{51ACB295-D0AE-4885-8BD6-11F6F1C0ECCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
