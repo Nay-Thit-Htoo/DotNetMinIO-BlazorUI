@@ -17,7 +17,7 @@
                 }
             }
         </MudSelect>
-        <MudTextField T="string" Label="Custom Folder Path" @bind-Value="txtObjectNewFilePath" HelperText="format : bucektname/folderpath/folderpath/" Variant="Variant.Filled"></MudTextField>
+        <MudTextField T="string" Label="Custom Folder Path" @bind-Value="txtObjectNewFilePath" HelperText="format : /folderpath/folderpath/" Variant="Variant.Filled"></MudTextField>
     </MudStack>
     <MudFileUpload T="IReadOnlyList<IBrowserFile>"
                    @ref="@_fileUpload"
@@ -79,8 +79,8 @@
                         <TemplateColumn CellClass="d-flex justify-end" Title="Action" Style="width:50">
                             <CellTemplate>
                                 <MudStack Row="true">
-                                    <MudButton Size="@Size.Small" Variant="@Variant.Filled" Color="@Color.Success">Download</MudButton>
-                                    <MudButton Size="@Size.Small" Variant="@Variant.Filled" Color="@Color.Error">Delete</MudButton>
+                                    <MudButton Size="@Size.Small" Variant="@Variant.Filled" Color="@Color.Success" OnClick="@(()=>DownloadBtn_Click(context.Item))">Download</MudButton>
+                                    <MudButton Size="@Size.Small" Variant="@Variant.Filled" Color="@Color.Error" OnClick="@(()=>DeleteBucketObjectBtnClick(context.Item.BucketName,context.Item.ObjectFileName))">Delete</MudButton>
                                 </MudStack>
                             </CellTemplate>
                         </TemplateColumn>

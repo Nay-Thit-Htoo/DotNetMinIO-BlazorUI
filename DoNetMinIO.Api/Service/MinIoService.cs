@@ -305,6 +305,7 @@ namespace DoNetMinIO.Api.Service
                 var args = new RemoveObjectArgs()
                  .WithBucket(requestDto.BucketName)
                  .WithObject(requestDto.ObjectName);
+               _minioClient.RemoveObjectAsync(args);
                 resultDto.Message = $"{requestDto.BucketName}/{requestDto.ObjectName} Successfully Deleted!";
                 goto Result;
             }
@@ -323,7 +324,7 @@ namespace DoNetMinIO.Api.Service
 
         Result:
             return Task.FromResult(resultDto);
-        }
+        }       
 
     }
 }

@@ -49,5 +49,12 @@ namespace DoNetMinIO.Api.Controllers
             var request = new CommonRequestDto() { BucketName = bucketName };
             return Ok(await _minIoService.RemoveBucket(request));
         }
+
+        [HttpPost("RemoveBucketObject")]
+        public async Task<IActionResult> RemoveBucketObject(string bucketName,string objectName)
+        {
+            var request = new CommonRequestDto() { BucketName = bucketName,ObjectName=objectName };
+            return Ok(await _minIoService.RemoveBucketObject(request));
+        }
     }
 }

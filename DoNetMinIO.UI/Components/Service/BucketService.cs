@@ -1,7 +1,9 @@
-﻿using DoNetMinIO.Api.Model.Request;
+﻿using DoNetMinIO.Api.Model;
+using DoNetMinIO.Api.Model.Request;
 using DoNetMinIO.Api.Model.Response;
 using DoNetMinIO.Domain.Model.Response;
 using DoNetMinIO.Domains.Model.Response;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using static MudBlazor.CategoryTypes;
 namespace DoNetMinIO.UI.Components.Service
@@ -36,8 +38,7 @@ namespace DoNetMinIO.UI.Components.Service
             var responseContent = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ResultDto<string>>(responseContent);
             return result!;
-
-        }
+        }     
 
         public async Task<ResultDto<IEnumerable<BucketObjectResponseDto>>> GetBucketsObjectList(string bucketName, string? objPrefixName)
         {
@@ -48,6 +49,15 @@ namespace DoNetMinIO.UI.Components.Service
             return result!;
         }
 
+        public async Task<ResultDto<string>> DeleteBucketObjects(string bucketName, string objectName)
+        {
+            using HttpResponseMessage response = await httpClient.PostAsJsonAsync($"api/Bucket/RemoveBucketObject?bucketName={bucketName}&objectName={objectName}", String.Empty);
+            response.EnsureSuccessStatusCode();
+            var responseContent = await response.Content.ReadAsStringAsync();
+            var result = JsonConvert.DeserializeObject<ResultDto<string>>(responseContent);
+            return result!;
+        }
+
         public async Task<ResultDto<string>> UploadBucketFile(string bucketName, string? objBucketNewFilePath,MultipartFormDataContent fileContent)
         {
             using HttpResponseMessage response = await httpClient.PostAsync($"api/File/Upload?bucketName={bucketName}&objectFilePath={objBucketNewFilePath}", fileContent);
@@ -55,6 +65,23 @@ namespace DoNetMinIO.UI.Components.Service
             var responseContent = await response.Content.ReadAsStringAsync();
             var result = new ResultDto<string>() { Message = responseContent};
             return result!;            
+        }
+
+        public async Task<ResultDto<byte[]>> DownloadBucketFile(string bucketName, string objectFileName)
+        {       
+            ResultDto<byte[]> result = new ResultDto<byte[]>();
+            using HttpResponseMessage response = await httpClient.GetAsync($"api/File/download/{objectFileName}?bucketName={bucketName}");
+            if (response.IsSuccessStatusCode)
+            {
+                result.Result=await response.Content.ReadAsByteArrayAsync();
+                result.Message = "Successfully Downloaded!";
+            }
+            else
+            {
+                result.MessageCode = nameof(Utilities.MessageStatus.Error);
+                result.Message = "Fail to Download";
+            }
+            return result;
         }
 
     }

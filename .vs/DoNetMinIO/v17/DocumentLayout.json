@@ -3,48 +3,80 @@
   "WorkspaceRootPath": "D:\\NTH-Projects\\DoNetMinIO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\pages\\bucketobject.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\pages\\bucketobject.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\service\\bucketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\service\\bucketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\pages\\bucketobject.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\pages\\bucketobject.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\service\\ibucketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\service\\ibucketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|d:\\nth-projects\\donetminio\\donetminio.api\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|solutionrelative:donetminio.api\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51ACB295-D0AE-4885-8BD6-11F6F1C0ECCD}|DoNetMinIO.Domains\\DoNetMinIO.Domains.csproj|d:\\nth-projects\\donetminio\\donetminio.domains\\model\\request\\commonrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51ACB295-D0AE-4885-8BD6-11F6F1C0ECCD}|DoNetMinIO.Domains\\DoNetMinIO.Domains.csproj|solutionrelative:donetminio.domains\\model\\request\\commonrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|d:\\nth-projects\\donetminio\\donetminio.api\\service\\minioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|solutionrelative:donetminio.api\\service\\minioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|d:\\nth-projects\\donetminio\\donetminio.api\\service\\iminioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|solutionrelative:donetminio.api\\service\\iminioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|d:\\nth-projects\\donetminio\\donetminio.api\\service\\minioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|solutionrelative:donetminio.api\\service\\minioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|d:\\nth-projects\\donetminio\\donetminio.api\\controllers\\bucketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|solutionrelative:donetminio.api\\controllers\\bucketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|d:\\nth-projects\\donetminio\\donetminio.api\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|solutionrelative:donetminio.api\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|d:\\nth-projects\\donetminio\\donetminio.api\\controllers\\miniocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|solutionrelative:donetminio.api\\controllers\\miniocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\service\\bucketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\service\\bucketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\service\\ibucketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\service\\ibucketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\pages\\bucketobject.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\pages\\bucketobject.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|d:\\nth-projects\\donetminio\\donetminio.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|solutionrelative:donetminio.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|d:\\nth-projects\\donetminio\\donetminio.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C67001D-EFAE-41A5-B0AD-9751C7B1B7D7}|DoNetMinIO.Api\\DoNetMinIO.Api.csproj|solutionrelative:donetminio.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\pages\\bucketobject.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\pages\\bucketobject.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|d:\\nth-projects\\donetminio\\donetminio.ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E293CA98-A8E8-4C15-A053-BCF253148B32}|DoNetMinIO.UI\\DoNetMinIO.UI.csproj|solutionrelative:donetminio.ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,8 +86,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 23,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MinIoController.cs",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Controllers\\MinIoController.cs",
+              "RelativeDocumentMoniker": "DoNetMinIO.Api\\Controllers\\MinIoController.cs",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Controllers\\MinIoController.cs",
+              "RelativeToolTip": "DoNetMinIO.Api\\Controllers\\MinIoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:13:55.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Error.razor",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Pages\\Error.razor",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "DoNetMinIO.UI\\Components\\Pages\\Error.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T07:57:31.495Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -102,143 +160,218 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\_Imports.razor",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\_Imports.razor",
+              "RelativeToolTip": "DoNetMinIO.UI\\Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T17:13:30.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "DoNetMinIO.UI\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T17:13:27.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "DoNetMinIO.UI\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T17:13:20.735Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "IBucketService.cs",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Service\\IBucketService.cs",
+              "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Service\\IBucketService.cs",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Service\\IBucketService.cs",
+              "RelativeToolTip": "DoNetMinIO.UI\\Components\\Service\\IBucketService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:18:43.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FileController.cs",
               "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Controllers\\FileController.cs",
               "RelativeDocumentMoniker": "DoNetMinIO.Api\\Controllers\\FileController.cs",
               "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Controllers\\FileController.cs",
               "RelativeToolTip": "DoNetMinIO.Api\\Controllers\\FileController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBIAAABsAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAQwBMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T05:00:08.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CommonRequestDto.cs",
-              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Domains\\Model\\Request\\CommonRequestDto.cs",
-              "RelativeDocumentMoniker": "DoNetMinIO.Domains\\Model\\Request\\CommonRequestDto.cs",
-              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Domains\\Model\\Request\\CommonRequestDto.cs",
-              "RelativeToolTip": "DoNetMinIO.Domains\\Model\\Request\\CommonRequestDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T04:53:33.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "IMinIoService.cs",
               "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Service\\IMinIoService.cs",
               "RelativeDocumentMoniker": "DoNetMinIO.Api\\Service\\IMinIoService.cs",
               "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Service\\IMinIoService.cs",
               "RelativeToolTip": "DoNetMinIO.Api\\Service\\IMinIoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBQAAAAIAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwBUAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T04:51:46.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MinIoService.cs",
-              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Service\\MinIoService.cs",
-              "RelativeDocumentMoniker": "DoNetMinIO.Api\\Service\\MinIoService.cs",
-              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Service\\MinIoService.cs",
-              "RelativeToolTip": "DoNetMinIO.Api\\Service\\MinIoService.cs",
-              "ViewState": "AQIAAKsAAAAAAAAAAAAqwLYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T04:51:46.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BucketController.cs",
-              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Controllers\\BucketController.cs",
-              "RelativeDocumentMoniker": "DoNetMinIO.Api\\Controllers\\BucketController.cs",
-              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Controllers\\BucketController.cs",
-              "RelativeToolTip": "DoNetMinIO.Api\\Controllers\\BucketController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T04:51:04.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BucketObject.razor.cs",
-              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor.cs",
-              "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor.cs",
-              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor.cs",
-              "RelativeToolTip": "DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAmwGYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T04:31:49.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "BucketObject.razor",
               "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor",
               "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor",
               "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor",
               "RelativeToolTip": "DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAFAAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-20T04:12:35.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IBucketService.cs",
-              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Service\\IBucketService.cs",
-              "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Service\\IBucketService.cs",
-              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Service\\IBucketService.cs",
-              "RelativeToolTip": "DoNetMinIO.UI\\Components\\Service\\IBucketService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAgAAAA",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Program.cs",
+              "RelativeDocumentMoniker": "DoNetMinIO.Api\\Program.cs",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Program.cs",
+              "RelativeToolTip": "DoNetMinIO.Api\\Program.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T03:36:33.431Z",
+              "WhenOpened": "2024-09-23T03:01:49.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "BucketService.cs",
               "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Service\\BucketService.cs",
               "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Service\\BucketService.cs",
               "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Service\\BucketService.cs",
               "RelativeToolTip": "DoNetMinIO.UI\\Components\\Service\\BucketService.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAwBIAAAAMAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwDMAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T03:44:50.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "BucketController.cs",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Controllers\\BucketController.cs",
+              "RelativeDocumentMoniker": "DoNetMinIO.Api\\Controllers\\BucketController.cs",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Controllers\\BucketController.cs",
+              "RelativeToolTip": "DoNetMinIO.Api\\Controllers\\BucketController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwDcAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:06:37.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MinIoService.cs",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Service\\MinIoService.cs",
+              "RelativeDocumentMoniker": "DoNetMinIO.Api\\Service\\MinIoService.cs",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\Service\\MinIoService.cs",
+              "RelativeToolTip": "DoNetMinIO.Api\\Service\\MinIoService.cs",
+              "ViewState": "AQIAAAUBAAAAAAAAAADwvzMBAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T04:51:46.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\App.razor",
+              "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\App.razor",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\App.razor",
+              "RelativeToolTip": "DoNetMinIO.UI\\Components\\App.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T17:13:30.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BucketObject.razor.cs",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor.cs",
+              "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor.cs",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor.cs",
+              "RelativeToolTip": "DoNetMinIO.UI\\Components\\Pages\\BucketObject.razor.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAwwJwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T15:52:11.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\appsettings.json",
+              "RelativeDocumentMoniker": "DoNetMinIO.UI\\appsettings.json",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\appsettings.json",
+              "RelativeToolTip": "DoNetMinIO.UI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-23T03:29:41.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "DoNetMinIO.Api\\appsettings.json",
+              "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.Api\\appsettings.json",
+              "RelativeToolTip": "DoNetMinIO.Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-23T03:29:48.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Home.razor.cs",
               "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\Home.razor.cs",
               "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Pages\\Home.razor.cs",
               "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\Home.razor.cs",
               "RelativeToolTip": "DoNetMinIO.UI\\Components\\Pages\\Home.razor.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAswBUAAAAIAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAIA3wCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-19T14:10:05.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Home.razor",
               "DocumentMoniker": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "DoNetMinIO.UI\\Components\\Pages\\Home.razor",
               "ToolTip": "D:\\NTH-Projects\\DoNetMinIO\\DoNetMinIO.UI\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "DoNetMinIO.UI\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAqwAkAAABMAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAqwBsAAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-19T14:09:34.293Z",
               "EditorCaption": ""
